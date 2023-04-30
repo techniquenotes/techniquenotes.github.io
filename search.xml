@@ -8,7 +8,7 @@
       <link href="/2023/04/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
       <url>/2023/04/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
       
-        <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs Java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span>&#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String []args)</span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;Hello World!&quot;</span>)<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p>$$x &#x3D; a_1^n + a_{23}^n + a_{4}^n$$</p>]]></content>
+        <content type="html"><![CDATA[<h1>一级标题</h1><p>测试</p><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs Java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span>&#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String []args)</span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;Hello World!&quot;</span>)<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
