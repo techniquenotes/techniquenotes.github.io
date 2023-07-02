@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>TranscodingBoy | TranscodingBoy</title><meta name="author" content="TranscodingBoy"><meta name="copyright" content="TranscodingBoy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="第2章 ClassPoint结构体&#x2F;&#x2F;C语言写法 typedef struct point&amp;#123;   float x;   float y; &amp;#125;Point;  Point a; a.x &#x3D; 1; a.y &#x3D; 2; &#x2F;&#x2F;const表示p指向的对象里的值不能由p指针修改 void print(const Point* p)&amp;#123;   printf(&quot;%d %d\n&amp;qu">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>TranscodingBoy | TranscodingBoy</title><meta name="author" content="TranscodingBoy"><meta name="copyright" content="TranscodingBoy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="第2章 Class Point结构体 &#x2F;&#x2F;C语言写法 typedef struct point&amp;#123;   float x;   float y; &amp;#125;Point;  Point a; a.x &#x3D; 1; a.y &#x3D; 2; &#x2F;&#x2F;const表示p指向的对象里的值不能由p指针修改 void print(const Point* p)&amp;#123;   printf(&quot;%d %d\n&amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TranscodingBoy">
 <meta property="og:url" content="http://techniquenotes.github.io/2023/05/25/oop/%E7%AC%AC2%E7%AB%A0%20Class/index.html">
 <meta property="og:site_name" content="TranscodingBoy">
-<meta property="og:description" content="第2章 ClassPoint结构体&#x2F;&#x2F;C语言写法 typedef struct point&amp;#123;   float x;   float y; &amp;#125;Point;  Point a; a.x &#x3D; 1; a.y &#x3D; 2; &#x2F;&#x2F;const表示p指向的对象里的值不能由p指针修改 void print(const Point* p)&amp;#123;   printf(&quot;%d %d\n&amp;qu">
+<meta property="og:description" content="第2章 Class Point结构体 &#x2F;&#x2F;C语言写法 typedef struct point&amp;#123;   float x;   float y; &amp;#125;Point;  Point a; a.x &#x3D; 1; a.y &#x3D; 2; &#x2F;&#x2F;const表示p指向的对象里的值不能由p指针修改 void print(const Point* p)&amp;#123;   printf(&quot;%d %d\n&amp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://techniquenotes.github.io/img/avatar.png">
 <meta property="article:published_time" content="2023-05-24T16:01:53.437Z">
@@ -160,7 +160,9 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/favicon.png')"><nav id="nav"><span id="blog-info"><a href="/" title="TranscodingBoy"><span class="site-name">TranscodingBoy</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-05-24T16:01:53.437Z" title="发表于 2023-05-25 00:01:53">2023-05-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-24T16:00:50.188Z" title="更新于 2023-05-25 00:00:50">2023-05-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第2章-Class"><a href="#第2章-Class" class="headerlink" title="第2章 Class"></a>第2章 Class</h1><h1 id="Point结构体"><a href="#Point结构体" class="headerlink" title="Point结构体"></a>Point结构体</h1><pre><code>//C语言写法
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/favicon.png')"><nav id="nav"><span id="blog-info"><a href="/" title="TranscodingBoy"><span class="site-name">TranscodingBoy</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-05-24T16:01:53.437Z" title="发表于 2023-05-25 00:01:53">2023-05-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-24T16:00:50.188Z" title="更新于 2023-05-25 00:00:50">2023-05-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>第2章 Class</h1>
+<h1>Point结构体</h1>
+<pre><code>//C语言写法
 typedef struct point&#123;
   float x;
   float y;
@@ -182,14 +184,16 @@ void move(Point* p, int dx, int dy)&#123;
   p -&gt; y += dy;
 &#125;
 </code></pre>
-<h1 id="Prototypes-原型"><a href="#Prototypes-原型" class="headerlink" title="Prototypes-原型"></a>Prototypes-原型</h1><pre><code>typedef struct point&#123;
+<h1>Prototypes-原型</h1>
+<pre><code>typedef struct point&#123;
   float x;
   float y;
 &#125;Point;
 void print(const Point*p);
 void move(Point* p, int dx, int dy);
 </code></pre>
-<h1 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h1><pre><code>Point a;
+<h1>Usage</h1>
+<pre><code>Point a;
 Point b;
 a.x = b.x = 1;
 a.y = b.y = 1;
@@ -213,7 +217,7 @@ void Point::print()&#123;
 //自由函数，struct里的print是成员函数
 void print(const Point* p)&#123;
   //printf(&quot;%d %d\n&quot;, p -&gt; x, p -&gt; y);
-    cout &lt;&lt; p -&gt; x &lt;&lt; &quot; &quot; &lt;&lt; p -&gt; y &lt;&lt; endl;
+	cout &lt;&lt; p -&gt; x &lt;&lt; &quot; &quot; &lt;&lt; p -&gt; y &lt;&lt; endl;
 &#125;
 
 int main()&#123;
@@ -242,7 +246,8 @@ a.print()相当于Point::print(&amp;a)，把a的地址取出，交给Point的pri
 编译器为自动为非本地变量和非全局变量加上this，使得编译通过
 */
 </code></pre>
-<h1 id="C-version"><a href="#C-version" class="headerlink" title="C++ version"></a>C++ version</h1><pre><code>class Point&#123;
+<h1>C++ version</h1>
+<pre><code>class Point&#123;
 public:
   void init(int x, int y);
   void move(int dx, int dy) const;
@@ -263,18 +268,20 @@ void Point::init(int x, int y)&#123;
   this -&gt; y = y;
 &#125;
 </code></pre>
-<h1 id="——-resolver（域解析器）"><a href="#——-resolver（域解析器）" class="headerlink" title=":: —— resolver（域解析器）"></a>:: —— resolver（域解析器）</h1><pre><code>&lt;Class Name&gt;::&lt;function name&gt;
+<h1>:: —— resolver（域解析器）</h1>
+<pre><code>&lt;Class Name&gt;::&lt;function name&gt;
 ::&lt;function name&gt;
 
 void S::f()&#123;
-    ::f();//Would be recursive otherwise!
+	::f();//Would be recursive otherwise!
   //如果::前没有任何东西，表明全局，调用的是全局的f()
   //如果没有f(),就是递归调用自己
   ::a++;//Select the global a，全局变量a
   a--;//The a at class scope，f函数内部没有本地变量a，所以应该是对应的对象的成员变量a
 &#125;
 </code></pre>
-<h1 id="C-VS-C"><a href="#C-VS-C" class="headerlink" title="C VS C++"></a>C VS C++</h1><pre><code>//C语言版本
+<h1>C VS C++</h1>
+<pre><code>//C语言版本
   typedef struct point &#123; 
    float x; 
    float y; 
@@ -305,7 +312,8 @@ void S::f()&#123;
 <p>2、C语言需要显示参数，表示指向结构的指针；C++有隐式的指针this</p>
 <p>3、C++中可以用this表明这个函数正在操作的结构体</p>
 <p>4、C++中调用函数时，使用对象.函数的方式</p>
-<h1 id="To-call-the-functions-in-a-class-调用函数"><a href="#To-call-the-functions-in-a-class-调用函数" class="headerlink" title="To call the functions in a class 调用函数"></a>To call the functions in a class 调用函数</h1><pre><code>Point a; 
+<h1>To call the functions in a class 调用函数</h1>
+<pre><code>Point a; 
 a.move(10,10); 
 /*There is a relationship with the function be called and 
 the variable to call it. 
@@ -313,7 +321,9 @@ The function itself knows it is doing something w/ the
 variable.
 */
 </code></pre>
-<h1 id="this-the-hidden-parameter"><a href="#this-the-hidden-parameter" class="headerlink" title="this: the hidden parameter"></a>this: the hidden parameter</h1><h1 id="隐藏参数"><a href="#隐藏参数" class="headerlink" title="隐藏参数"></a>隐藏参数</h1><pre><code>//• this is a hidden parameter for all member 
+<h1>this: the hidden parameter</h1>
+<h1>隐藏参数</h1>
+<pre><code>//• this is a hidden parameter for all member 
 //functions, with the type of the struct 
 void Point::move(int dx, int dy); 
 //➔ (can be regarded as) 
@@ -325,7 +335,8 @@ a.move(10, 10);
 //➔ (can be regarded as)
 Point::move(&amp;a, 10, 10);
 </code></pre>
-<h1 id="this-cpp"><a href="#this-cpp" class="headerlink" title="this.cpp"></a>this.cpp</h1><pre><code>#include &lt;iostream&gt;
+<h1>this.cpp</h1>
+<pre><code>#include &lt;iostream&gt;
 using namespace std;
 
 struct Stu&#123;
@@ -347,7 +358,8 @@ int mai()&#123;
 输出的两个都是stu的地址
 */
 </code></pre>
-<h1 id="Integer-h"><a href="#Integer-h" class="headerlink" title="Integer.h"></a>Integer.h</h1><pre><code>#ifndef _INTEGER_HEAD_
+<h1>Integer.h</h1>
+<pre><code>#ifndef _INTEGER_HEAD_
 #define _INTEGER_HEAD_
 
 struct Integer&#123;
@@ -357,7 +369,8 @@ struct Integer&#123;
 &#125;;
 #endif
 </code></pre>
-<h1 id="Integer-cpp"><a href="#Integer-cpp" class="headerlink" title="Integer.cpp"></a>Integer.cpp</h1><pre><code>#incldue &quot;Integer.h&quot;
+<h1>Integer.cpp</h1>
+<pre><code>#incldue &quot;Integer.h&quot;
 //Integer::init是完整名称，所以void写在前
 void Integer::init(int i)&#123;
   this -&gt; i = i;
@@ -371,40 +384,47 @@ Integer* Integer::bigger(Integer* r)&#123;
   &#125;
 &#125;
 </code></pre>
-<h1 id="Objects-x3D-Attributes-Services-对象-x3D-属性-服务"><a href="#Objects-x3D-Attributes-Services-对象-x3D-属性-服务" class="headerlink" title="Objects &#x3D; Attributes + Services 对象&#x3D;属性+服务"></a>Objects &#x3D; Attributes + Services 对象&#x3D;属性+服务</h1><p>• Data: the properties or status 用数据表明属性和状态</p>
+<h1>Objects = Attributes + Services 对象=属性+服务</h1>
+<p>• Data: the properties or status 用数据表明属性和状态</p>
 <p>• Operations: the functions 对象对外提供的服务，服务过程中可能数据会改变</p>
 <p>只有通过服务才能得知data内容或对data进行操作</p>
 <p><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/P4maOgworKMROWNX/img/eeddd470-b003-42ed-b4d1-209253eedf00.png" alt="image"></p>
-<h1 id="Objects"><a href="#Objects" class="headerlink" title="Objects"></a>Objects</h1><p>• In C++, an object is just a variable, and the purest </p>
-<p>definition（纯粹的定义） is “a region of storage”. </p>
-<p>• The struct variables mentioned before are just </p>
+<h1>Objects</h1>
+<p>• In C++, an object is just a variable, and the purest</p>
+<p>definition（纯粹的定义） is “a region of storage”.</p>
+<p>• The struct variables mentioned before are just</p>
 <p>objects in C++.</p>
-<h1 id="Ticket-Machine-售票机"><a href="#Ticket-Machine-售票机" class="headerlink" title="Ticket Machine 售票机"></a>Ticket Machine 售票机</h1><p>• Ticket machines print a ticket  when a customer inserts the   correct money for their fare.</p>
-<p>• Our ticket machines work by  customers ‘inserting’ money  into them, and then  requesting a ticket to be </p>
-<p>printed. A machine keeps a  running total of the amount </p>
+<h1>Ticket Machine 售票机</h1>
+<p>• Ticket machines print a ticket  when a customer inserts the   correct money for their fare.</p>
+<p>• Our ticket machines work by  customers ‘inserting’ money  into them, and then  requesting a ticket to be</p>
+<p>printed. A machine keeps a  running total of the amount</p>
 <p>of money it has collected  throughout its operation.</p>
 <p>这是面向过程的思维方式</p>
-<h2 id="面向对象的思维方式"><a href="#面向对象的思维方式" class="headerlink" title="面向对象的思维方式"></a>面向对象的思维方式</h2><p><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/P4maOgworKMROWNX/img/a8094c76-e1bf-4893-8b5d-746f99ff6d2f.png" alt="image"></p>
+<h2 id="面向对象的思维方式">面向对象的思维方式</h2>
+<p><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/P4maOgworKMROWNX/img/a8094c76-e1bf-4893-8b5d-746f99ff6d2f.png" alt="image"></p>
 <p>左边是数据，右边是服务</p>
 <p>prompt提示</p>
 <p>balance余额</p>
 <p><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/P4maOgworKMROWNX/img/33aaf9e6-e1a8-4de6-bd7f-820f2bab28bf.png" alt="image"></p>
 <p><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/P4maOgworKMROWNX/img/871c6b0d-065e-4338-87f7-6154fc609a40.png" alt="image"></p>
-<h1 id="Object-vs-Class"><a href="#Object-vs-Class" class="headerlink" title="Object vs. Class"></a>Object vs. Class</h1><p>• Objects (cat)</p>
+<h1>Object vs. Class</h1>
+<p>• Objects (cat)</p>
 <p>• Represent things, events, or concepts</p>
 <p>• Respond to messages at run-time</p>
 <p>• Classes (cat class)</p>
 <p>• Define properties of instances</p>
 <p>• Act like types in C++</p>
 <p><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/P4maOgworKMROWNX/img/dc17b818-3237-4cdb-bf47-e9862e9e9389.png" alt="image"></p>
-<h1 id="OOP-Characteristics"><a href="#OOP-Characteristics" class="headerlink" title="OOP Characteristics"></a>OOP Characteristics</h1><p>1.Everything is an object. 一切皆为对象</p>
+<h1>OOP Characteristics</h1>
+<p>1.Everything is an object. 一切皆为对象</p>
 <p>2.A program is a bunch of objects telling each  other what to do by sending messages. 程序是一堆对象，通过发送消息互相告知做什么。不是how to do。强调程序的自主性</p>
 <p>3.Each object has its own memory made up of  other objects. 每个对象有他自己的内存，这个内存里有其他的对象 。</p>
-<p>4.Every object has a type. 每个对象有一个类型。 </p>
+<p>4.Every object has a type. 每个对象有一个类型。</p>
 <p>5.All objects of a particular type can receive  the same messages. 属于同一个特定类型的对象可以接收相同类型的消息——逆否也对：接收不同类型消息的对象属于不同的类型</p>
-<h1 id="Point-init"><a href="#Point-init" class="headerlink" title="Point::init()"></a>Point::init()</h1><pre><code>class Point&#123;
+<h1>Point::init()</h1>
+<pre><code>class Point&#123;
 public:
-    void init(int x, int y);
+	void init(int x, int y);
   void print() const;
   void move(int dx, int dy);
 private:
@@ -417,9 +437,10 @@ a.init(1, 2);
 a.move(2, 2);
 a.print();
 </code></pre>
-<h1 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h1><pre><code>class Point&#123;
+<h1>构造函数</h1>
+<pre><code>class Point&#123;
 public:
-    Point();
+	Point();
   void print() const;
   void move(int dx, int dy);
 private:
@@ -444,9 +465,10 @@ int main()&#123;
 &#125;
 //打印出了两次Point()，说明每次创建对象就会调用构造函数
 </code></pre>
-<h1 id="有参构造函数"><a href="#有参构造函数" class="headerlink" title="有参构造函数"></a>有参构造函数</h1><pre><code>class Point&#123;
+<h1>有参构造函数</h1>
+<pre><code>class Point&#123;
 public:
-    Point(int x, int y);
+	Point(int x, int y);
 private:
   int x;
   int y;
@@ -463,7 +485,7 @@ int main()&#123;
 <p>1、构造函数没有返回类型</p>
 <p>2、对象被创建时调用构造函数</p>
 <p>3、分为无参构造函数和有参构造函数</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://techniquenotes.github.io">TranscodingBoy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://techniquenotes.github.io/2023/05/25/oop/%E7%AC%AC2%E7%AB%A0%20Class/">http://techniquenotes.github.io/2023/05/25/oop/第2章 Class/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://techniquenotes.github.io" target="_blank">TranscodingBoy</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">我的第一篇博客</div></div></a></div><div class="next-post pull-right"><a href="/2023/07/02/operating%20system/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%AF%BC%E8%AE%BA/" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info"></div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81ODQyOS8zNDg5Mg=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">TranscodingBoy</div><div class="author-info__description">为的就是这块技术</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/techniquenotes.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/techniquenotes" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:wtczju@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC2%E7%AB%A0-Class"><span class="toc-number">1.</span> <span class="toc-text">第2章 Class</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Point%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-number">2.</span> <span class="toc-text">Point结构体</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Prototypes-%E5%8E%9F%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">Prototypes-原型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Usage"><span class="toc-number">4.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#C-version"><span class="toc-number">5.</span> <span class="toc-text">C++ version</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%80%94%E2%80%94-resolver%EF%BC%88%E5%9F%9F%E8%A7%A3%E6%9E%90%E5%99%A8%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">:: —— resolver（域解析器）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#C-VS-C"><span class="toc-number">7.</span> <span class="toc-text">C VS C++</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#To-call-the-functions-in-a-class-%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0"><span class="toc-number">8.</span> <span class="toc-text">To call the functions in a class 调用函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#this-the-hidden-parameter"><span class="toc-number">9.</span> <span class="toc-text">this: the hidden parameter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9A%90%E8%97%8F%E5%8F%82%E6%95%B0"><span class="toc-number">10.</span> <span class="toc-text">隐藏参数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#this-cpp"><span class="toc-number">11.</span> <span class="toc-text">this.cpp</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Integer-h"><span class="toc-number">12.</span> <span class="toc-text">Integer.h</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Integer-cpp"><span class="toc-number">13.</span> <span class="toc-text">Integer.cpp</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Objects-x3D-Attributes-Services-%E5%AF%B9%E8%B1%A1-x3D-%E5%B1%9E%E6%80%A7-%E6%9C%8D%E5%8A%A1"><span class="toc-number">14.</span> <span class="toc-text">Objects &#x3D; Attributes + Services 对象&#x3D;属性+服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Objects"><span class="toc-number">15.</span> <span class="toc-text">Objects</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ticket-Machine-%E5%94%AE%E7%A5%A8%E6%9C%BA"><span class="toc-number">16.</span> <span class="toc-text">Ticket Machine 售票机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F"><span class="toc-number">16.1.</span> <span class="toc-text">面向对象的思维方式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Object-vs-Class"><span class="toc-number">17.</span> <span class="toc-text">Object vs. Class</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OOP-Characteristics"><span class="toc-number">18.</span> <span class="toc-text">OOP Characteristics</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Point-init"><span class="toc-number">19.</span> <span class="toc-text">Point::init()</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">20.</span> <span class="toc-text">构造函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%89%E5%8F%82%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">21.</span> <span class="toc-text">有参构造函数</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/02/operating%20system/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%AF%BC%E8%AE%BA/" title="无题">无题</a><time datetime="2023-07-02T03:16:42.139Z" title="发表于 2023-07-02 11:16:42">2023-07-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/25/oop/%E7%AC%AC2%E7%AB%A0%20Class/" title="无题">无题</a><time datetime="2023-05-24T16:01:53.437Z" title="发表于 2023-05-25 00:01:53">2023-05-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客">我的第一篇博客</a><time datetime="2023-04-29T08:30:42.000Z" title="发表于 2023-04-29 16:30:42">2023-04-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/29/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/Hexo%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4/" title="Hexo+github搭建个人博客（一）将Hexo部署到GitHub并实现发布文章">Hexo+github搭建个人博客（一）将Hexo部署到GitHub并实现发布文章</a><time datetime="2023-04-29T08:30:42.000Z" title="发表于 2023-04-29 16:30:42">2023-04-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/29/hello-world/" title="Hello World">Hello World</a><time datetime="2023-04-29T06:07:19.743Z" title="发表于 2023-04-29 14:07:19">2023-04-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By TranscodingBoy</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://techniquenotes.github.io">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script>function panguFn () {
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://techniquenotes.github.io">TranscodingBoy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://techniquenotes.github.io/2023/05/25/oop/%E7%AC%AC2%E7%AB%A0%20Class/">http://techniquenotes.github.io/2023/05/25/oop/第2章 Class/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://techniquenotes.github.io" target="_blank">TranscodingBoy</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">我的第一篇博客</div></div></a></div><div class="next-post pull-right"><a href="/2023/07/02/operating%20system/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%AF%BC%E8%AE%BA/" title="导论"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">导论</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81ODQyOS8zNDg5Mg=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">TranscodingBoy</div><div class="author-info__description">为的就是这块技术</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/techniquenotes.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/techniquenotes" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:wtczju@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">第2章 Class</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Point结构体</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">Prototypes-原型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">5.</span> <span class="toc-text">C++ version</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">6.</span> <span class="toc-text">:: —— resolver（域解析器）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">7.</span> <span class="toc-text">C VS C++</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">8.</span> <span class="toc-text">To call the functions in a class 调用函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">9.</span> <span class="toc-text">this: the hidden parameter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">10.</span> <span class="toc-text">隐藏参数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">11.</span> <span class="toc-text">this.cpp</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">12.</span> <span class="toc-text">Integer.h</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">13.</span> <span class="toc-text">Integer.cpp</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">14.</span> <span class="toc-text">Objects &#x3D; Attributes + Services 对象&#x3D;属性+服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">15.</span> <span class="toc-text">Objects</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">16.</span> <span class="toc-text">Ticket Machine 售票机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F"><span class="toc-number">16.1.</span> <span class="toc-text">面向对象的思维方式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">17.</span> <span class="toc-text">Object vs. Class</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">18.</span> <span class="toc-text">OOP Characteristics</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">19.</span> <span class="toc-text">Point::init()</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">20.</span> <span class="toc-text">构造函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">21.</span> <span class="toc-text">有参构造函数</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/02/operating%20system/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/" title="无题">无题</a><time datetime="2023-07-02T09:59:17.349Z" title="发表于 2023-07-02 17:59:17">2023-07-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/02/operating%20system/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%AF%BC%E8%AE%BA/" title="导论">导论</a><time datetime="2023-07-02T03:16:42.139Z" title="发表于 2023-07-02 11:16:42">2023-07-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/25/oop/%E7%AC%AC2%E7%AB%A0%20Class/" title="无题">无题</a><time datetime="2023-05-24T16:01:53.437Z" title="发表于 2023-05-25 00:01:53">2023-05-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客">我的第一篇博客</a><time datetime="2023-04-29T08:30:42.000Z" title="发表于 2023-04-29 16:30:42">2023-04-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/29/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/Hexo%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4/" title="Hexo+github搭建个人博客（一）将Hexo部署到GitHub并实现发布文章">Hexo+github搭建个人博客（一）将Hexo部署到GitHub并实现发布文章</a><time datetime="2023-04-29T08:30:42.000Z" title="发表于 2023-04-29 16:30:42">2023-04-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By TranscodingBoy</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://techniquenotes.github.io">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
