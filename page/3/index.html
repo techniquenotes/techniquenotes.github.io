@@ -54,7 +54,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-03-27 14:04:54'
+  postUpdate: '2024-03-27 15:03:49'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -158,36 +158,41 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">31</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa-tools"></i><span> Tools</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> Archives</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/favicon.png')"><nav id="nav"><span id="blog-info"><a href="/" title="TechNotes"><span class="site-name">TechNotes</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa-tools"></i><span> Tools</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> Archives</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">TechNotes</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/techniquenotes" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2432761900@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/PyTorch/notebook/Pytorch%20Learning%201/" title="PyTorch Learning 1">PyTorch Learning 1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.610Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-30T14:22:20.000Z" title="更新于 2023-07-30 22:22:20">2023-07-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/PyTorch/">PyTorch</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Note/">Note</a></span></div><div class="content">1 Pytorch 环境配置
-Anaconda 安装
-显卡配置(驱动+CUDA Toolkit)
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa-tools"></i><span> Tools</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> Archives</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/favicon.png')"><nav id="nav"><span id="blog-info"><a href="/" title="TechNotes"><span class="site-name">TechNotes</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa-tools"></i><span> Tools</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> Archives</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">TechNotes</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/techniquenotes" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2432761900@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/PyTorch/notebook/Pytorch%20Learning%202/" title="PyTorch Learning 2">PyTorch Learning 2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.615Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-30T14:22:28.000Z" title="更新于 2023-07-30 22:22:28">2023-07-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/PyTorch/">PyTorch</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Note/">Note</a></span></div><div class="content">7 Tensorboard的使用(一)打开Pycharm，设置环境123456789101112# 从torch.utils.tensorboard模块中导入SummaryWriter类from torch.utils.tensorboard import SummaryWriter# 将事件和文件存储到&quot;logs&quot;文件夹下writer = SummaryWriter(&quot;logs&quot;)# writer.add_image()# y = x# i 范围是0到99for i in range(100):    writer.add_scalar(&quot;y = x&quot;, i, i)write.close()
 
-有序地管理环境
-初始环境：base
+add_scalar()方法
+123456789101112131415def add_scalar(       self,       tag,       scalar_value,       global_step=None,       walltime=None,       new_style=False,       ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/PyTorch/notebook/Pytorch%20Learning%201/" title="PyTorch Learning 1">PyTorch Learning 1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.610Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-30T14:22:20.000Z" title="更新于 2023-07-30 22:22:20">2023-07-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/PyTorch/">PyTorch</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Note/">Note</a></span></div><div class="content">1 Pytorch 环境配置Anaconda 安装显卡配置(驱动+CUDA Toolkit)
+
+有序地管理环境初始环境：base
 切换环境使用不同的pytorch版本
 1234//输入命令，安装pythonconda create -n pytorch python=3.7    //输入命令，激活环境    conda activate pytorch
 
+
+
 12//查看工具包pip list
 
-Pytorch安装
-官网：https://pytorch.org/
+
+
+Pytorch安装官网：https://pytorch.org/ 
 任务管理器查看是否有英伟达显卡
+
 
 CUDA推荐使用9.2
 查看驱动版本
+
 
 大于396.26可使用
 pytorch环境下输入命令，安装9.2版本
 12conda install pytorch torchvision cudatoolkit=9.2 -c pytorch -c defaultsc numba/label/dev
 
+
 报错，因为下载速度太慢
 
 清华源可以下载cpu版本：https://blog.csdn.net/zzq060143/article/details/88042075
-如果找不到源，需要把命令中的 h ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/IDEA/IDEA%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%8F%8A%E9%85%8D%E7%BD%AE/" title="IDEA快捷键及配置">IDEA快捷键及配置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.603Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-26T10:03:28.000Z" title="更新于 2023-07-26 18:03:28">2023-07-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/IDEA/">IDEA</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">快捷键
-
+如果找不到源，需要把命令 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/IDEA/IDEA%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%8F%8A%E9%85%8D%E7%BD%AE/" title="IDEA快捷键及配置">IDEA快捷键及配置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.603Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-26T10:03:28.000Z" title="更新于 2023-07-26 18:03:28">2023-07-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/IDEA/">IDEA</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">快捷键
 settings:ctrl alt + s
 project structure: ctrl+alt+shift+s
-代码提示：默认ctrl +空格，在settings中修改为alt+/
+代码提示：默认ctrl +空格，在settings中修改为alt+&#x2F;
 alt+insert新增或生成代码（构造器等），在左边框中使用可new新文件
 alt+回车————导入包，代码自动修正（new对象时先写new再补全）
 ctrl+alt+L  格式化代码
@@ -196,7 +201,7 @@ ctrl+R替换文本
 双击shift 查找任何地方（查源码）
 crtl+Y 删除行
 ctrl+D 复制行
-ctrl+/或ctrl+shift+/  注释（//或者/···/）添加和删除都可以
+ctrl+&#x2F;或ctrl+shift+&#x2F;  注释（&#x2F;&#x2F;或者&#x2F;···&#x2F;）添加和删除都可以
 shift+enter 快速换行
 ctrl+shift+enter 补上分号
 shift+F7  debug时进入指定方法
@@ -206,195 +211,140 @@ shift + f6 改变类名，文件重命名
 f2快速定位到报错位置
 同一列编辑，按住alt+shift,点击同一列
 shift+f6，所以同一变量都改变
-方法名旁按住ctrl,点击方法名可跳转至该方法代码
-alt +字母，点 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Hexo/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89/" title="Hexo博客搭建教程（二）">Hexo博客搭建教程（二）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.598Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-09T04:03:50.000Z" title="更新于 2023-08-09 12:03:50">2023-08-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">安装主题
-MyBlog根目录下使用git bash命令打开git窗口。执行下述命令，安装主题
+方 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Hexo/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89/" title="Hexo博客搭建教程（二）">Hexo博客搭建教程（二）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.598Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-09T04:03:50.000Z" title="更新于 2023-08-09 12:03:50">2023-08-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">安装主题MyBlog根目录下使用git bash命令打开git窗口。执行下述命令，安装主题
 1git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
-选用主题
-修改MyBlog根目录下的_config.yml，把主题改为butterfly
+
+选用主题修改MyBlog根目录下的_config.yml，把主题改为butterfly
 1234# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: butterfly
-安装插件
-安装pug以及stylus的渲染器
+
+安装插件安装pug以及stylus的渲染器
 1npm install hexo-renderer-pug hexo-renderer-stylus --save
-升级建议
-​	为了减少升级主题后带来的不便，可使用以下方法（建议，可以不做）
-​	在MyBlog根目录下创建一个文件_config.butterfly.yml，并把butterfly主题目录的_config.yml的内容复制到_config.butterfly. ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Hexo/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/" title="Hexo博客搭建教程（一）">Hexo博客搭建教程（一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.594Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-24T09:35:40.000Z" title="更新于 2023-07-24 17:35:40">2023-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">参考教程
-网站搭建：https://blog.csdn.net/qq_58608526/article/details/124652412?spm=1001.2014.3001.5506
-主题配置：https://blog.csdn.net/mjh1667002013/article/details/129290903?spm=1001.2014.3001.5506
-完整：https://butterfly.js.org/posts/21cfbf15/
-安装Git
-安装nodejs
-​	Hexo是基于node.js编写的，所以需要安装一下node.js和里面的npm工具。
-​	下载稳定版或者最新版都可以Node.js，安装选项全部默认，一路点击Next。
-​	最后安装好之后，按Win+R打开命令提示符，输入node -v和npm -v，如果出现版本号，那么就安装成功了。
+
+升级建议​	为了减少升级主题后带来的不便，可使用以下方法（建议，可以不做）​	在MyBlog根目录下创建一个文件_config.butterfly.yml，并把butterfly主题目录的_config.yml的内容复制到_config.butterfly.ym ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Hexo/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/" title="Hexo博客搭建教程（一）">Hexo博客搭建教程（一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.594Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-24T09:35:40.000Z" title="更新于 2023-07-24 17:35:40">2023-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">参考教程网站搭建：https://blog.csdn.net/qq_58608526&#x2F;article&#x2F;details&#x2F;124652412?spm&#x3D;1001.2014.3001.5506主题配置：https://blog.csdn.net/mjh1667002013/article/details/129290903?spm=1001.2014.3001.5506完整：https://butterfly.js.org/posts/21cfbf15/
+安装Git安装nodejs​	Hexo是基于node.js编写的，所以需要安装一下node.js和里面的npm工具。​	下载稳定版或者最新版都可以Node.js，安装选项全部默认，一路点击Next。​	最后安装好之后，按Win+R打开命令提示符，输入node -v和npm -v，如果出现版本号，那么就安装成功了。
 ​                                   
-安装Hexo
-​	前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹MyBlog，用来存放自己的博客文件，然后cd到 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Hexo/Hexo%20d%E4%B8%8A%E4%BC%A0%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3/" title="Hexo d上传失败解决">Hexo d上传失败解决</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.590Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-01-30T08:58:40.000Z" title="更新于 2024-01-30 16:58:40">2024-01-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">Hexo d上传失败解决
-文件配置
-https://blog.csdn.net/qq_59039063/article/details/132459418?spm=1001.2014.3001.5506
-修改.ssh文件夹
-在 C:\Users\Administrator.ssh 中找到.ssh文件夹（此前配置SSH时会生成该文件夹）
-在 .ssh 文件夹中新建文本文件 config ，不带后缀（可以新建文本文档，去掉 .txt 后缀）
-打开 config 文件，输入以下内容，保存后即可，其中xxx@qq.com 为你自己的邮箱
+安装Hexo​	前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹MyBlog，用来存放自 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Hexo/Hexo%20d%E4%B8%8A%E4%BC%A0%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3/" title="Hexo d上传失败解决">Hexo d上传失败解决</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.590Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-01-30T08:58:40.000Z" title="更新于 2024-01-30 16:58:40">2024-01-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">Hexo d上传失败解决文件配置https://blog.csdn.net/qq_59039063/article/details/132459418?spm=1001.2014.3001.5506
+修改.ssh文件夹在 C:\Users\Administrator.ssh 中找到.ssh文件夹（此前配置SSH时会生成该文件夹）
+在 .ssh 文件夹中新建文本文件 config ，不带后缀（可以新建文本文档，去掉 .txt 后缀）打开 config 文件，输入以下内容，保存后即可，其中&#120;&#120;&#x78;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d; 为你自己的邮箱
 123456Host github.comUser xxx@qq.comHostname ssh.github.comPreferredAuthentications publickeyIdentityFile ~/.ssh/id_rsaPort 443
 
-修改hosts文件
-操作系统中 hosts 文件的权限优先级高于DNS服务器，在 C:\Windows\System32\drivers\etc 目录下找到并修改 hosts 文件，增加一条 github. ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Git/github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%A4%B9/" title="github上传本地文件夹">github上传本地文件夹</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.584Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-11T08:56:14.000Z" title="更新于 2023-08-11 16:56:14">2023-08-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Git/">Git</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">参考
-Github上传本地文件
-解决
-本地新建空文件夹，文件名为3
+
+
+修改hosts文件操作系统中 hosts 文件的权限优先级高于DNS服务器，在 C:\Windows\System ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Git/github%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%A4%B9/" title="github上传本地文件夹">github上传本地文件夹</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.584Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-11T08:56:14.000Z" title="更新于 2023-08-11 16:56:14">2023-08-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Git/">Git</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">参考Github上传本地文件
+解决本地新建空文件夹，文件名为3
 在空文件夹中点击鼠标右键，打开git bash
 复制仓库路径
 
-拷贝仓库到本地
-1git clone https://github.com/techniquenotes/School_Resources.git
+拷贝仓库到本地1git clone https://github.com/techniquenotes/School_Resources.git
+
+
 
 此时本地文件夹里会出现你的仓库文件夹 。
 
+
 将你要上传的文件夹复制到仓库文件夹中
 
-依次执行git指令
-12345cd School_Resources # 进入到仓库文件夹git init  //初始化git add . //注意add后面有空格和小数点git commit -m &quot;English Language and Society&quot;  //引号内是提交时的描述信息  git push  //提交到github
+
+依次执行git指令12345cd School_Resources # 进入到仓库文件夹git init  //初始化git add . //注意add后面有空格和小数点git commit -m &quot;English Language and Society&quot;  //引号内是提交时的描述信息  git push  //提交到github
+
+
+
 
 
 12git add . //添加文件夹内所有文件git add &quot;文件名&quot; //添加单个文件
 
+
+
 提交成功
 
-多次提交
-1234git pull //更新远程仓库到本地git add &quot;文件名&quot;git commit -m &quot ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Git/git%20clone%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" title="git clone 连接失败解决方法">git clone 连接失败解决方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.580Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-15T06:06:28.000Z" title="更新于 2023-08-15 14:06:28">2023-08-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Git/">Git</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">参考
-git使用代理clone
+多次提交1234git pull //更新远程仓库到本地git add &quot;文件名&quot;git commit -m & ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Git/git%20clone%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" title="git clone 连接失败解决方法">git clone 连接失败解决方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.580Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-15T06:06:28.000Z" title="更新于 2023-08-15 14:06:28">2023-08-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Git/">Git</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">参考git使用代理clone
 git clone 时Failed to connect to github.com port 443:connection timed out 怎么办
-问题
-执行git clone 无法连接
+问题执行git clone 无法连接
 123$ git clone https://github.com/techniquenotes/School_Resources.gitCloning into &#x27;School_Resources&#x27;...fatal: unable to access &#x27;https://github.com/techniquenotes/School_Resources.git/&#x27;: Failed to connect to github.com port 443 after 21071 ms: Couldn&#x27;t connect to server
-解决
-执行
-123git config --global http.proxy http://127.0.0.1:1080git config --global https.proxy ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Deep%20Learning/Deep%20Learning%202/" title="Deep Learning 2">Deep Learning 2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.575Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-30T14:19:58.000Z" title="更新于 2023-07-30 22:19:58">2023-07-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Deep-Learning/">Deep Learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Note/">Note</a></span></div><div class="content">20 池化层的作用
-起压缩作用
 
-最大池化
-h和w会变，通道数c不会变。
+解决执行
+123git config --global http.proxy http://127.0.0.1:1080git config --global https.proxy h ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Deep%20Learning/Deep%20Learning%202/" title="Deep Learning 2">Deep Learning 2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.575Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-30T14:19:58.000Z" title="更新于 2023-07-30 22:19:58">2023-07-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Deep-Learning/">Deep Learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Note/">Note</a></span></div><div class="content">20 池化层的作用起压缩作用
 
-21 整体网络架构
-每个卷积层后都有激活函数RELU，池化层不需要。多次卷积后一次池化。
+
+最大池化h和w会变，通道数c不会变。
+
+
+21 整体网络架构每个卷积层后都有激活函数RELU，池化层不需要。多次卷积后一次池化。
 最后要先将三维的特征图展平成特征向量，再用全连接层FC分类。
 
-只有带参数才能称为层，卷积层和全连接层属于层。激活函数和池化层不算。
-特征图变化
-转换：三维转换成一维向量
 
-22 VGG网络架构
-经典网络-Alexnet
-5层卷积，3层全连接
+只有带参数才能称为层，卷积层和全连接层属于层。激活函数和池化层不算。
+特征图变化转换：三维转换成一维向量
+
+
+22 VGG网络架构经典网络-Alexnet5层卷积，3层全连接
+
 
 VGG
-
 卷积核大小都是3×3。
 16层或19层常用。
 每一次池化层后卷积核个数翻倍，弥补池化损失。
 
 
-23 残差网络Resnet
-经典网络-Resnet
-当做特征提取，而不是分类
-如果某一层效果不好，会把该层的权重改为0，H(x)=x。
+
+23 残差网络Resnet经典网络-Resnet当做特征提取，而不是分类
+如果某一层效果不好，会把该层的权重改为0，H(x)&#x3D;x。
+
 
 效果
 
-24 感受野的作用
-感受野
-每一层的输出能感受前一个输入。感受野是最后一层能感受到最初输入的范围。下图第二层的一块先感受到第一个卷积层3×3范围，后者是对最初5×5范围卷积得到，所以最后一层能感受到最初输入的范围是5×5。
+24 感受野的作用感受野每一层的输出能感受前一个输入。感受野是最后一层能感受到最初输入的范围。下图第二层的一块先感受到第一个卷积层3×3范围，后者是对最初5×5范围卷积得到，所以最后一层能感受到最初输入的范围是5×5。
+
 
 感受野越大越好，说明一小块能代表原始数据大块特征。
 堆叠3个小的卷积核原因
 
-25 RNN网络架构解读
-递归神 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Deep%20Learning/Deep%20Learning%201/" title="Deep Learning 1">Deep Learning 1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.571Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-29T14:20:00.000Z" title="更新于 2023-07-29 22:20:00">2023-07-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Deep-Learning/">Deep Learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Note/">Note</a></span></div><div class="content">1 深度学习要解决的问题
-机器学习流程
-
+25 RNN网络架构解读递归 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Deep%20Learning/Deep%20Learning%201/" title="Deep Learning 1">Deep Learning 1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.571Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-29T14:20:00.000Z" title="更新于 2023-07-29 22:20:00">2023-07-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Deep-Learning/">Deep Learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Note/">Note</a></span></div><div class="content">1 深度学习要解决的问题机器学习流程
 数据获取
 特征工程（重点）
 建立模型
 评估与应用
 
 特征工程的作用
-
 数据特征决定了模型的上限
 预处理和特征提取是最核心的
 算法与参数选择决定了如何逼近这个上限
 
 深度学习相比机器学习的优势是能够利用神经网络提取计算机能够识别的特征。
-2 深度学习应用领域
-无人驾驶，人脸识别，医学检测，屏幕变脸，分辨率重构
+2 深度学习应用领域无人驾驶，人脸识别，医学检测，屏幕变脸，分辨率重构
 问题：参数很多，移动端速度可能比较慢
-3 计算机视觉任务
-图像分类任务
+3 计算机视觉任务图像分类任务
 计算机视觉
-
 图像表示：计算机眼中的图像
 一张图片被表示成三维数组的形式，每个像素的值从0到255
-
 例如：3001003
 
 
 
 计算机视觉面临的挑战
-
 照射角度
 形状改变
 部分遮蔽
 背景混入
 
-4 视觉任务中遇到的问题
-机器学习常规套路
-
+4 视觉任务中遇到的问题机器学习常规套路
 收集数据并给定标签
 训练一个分类器
 测试，评估
 
-K近邻算法
-K是半径。圆内哪种形状多绿色点就是哪种结果。
+K近邻算法K是半径。圆内哪种形状多绿色点就是哪种结果。
+
 
 计算流程
-
 计算已知类别数据集中的点与当前点的距离
 按照距离依次排序
 选取与当前点距离最小的K个点
 确定前K个点所在类别的出现概率
 返回前K个点出现频率最高的类别作为当前点预测分类
 
-数据库样例CIFAR-10
-简介
-
-10 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/20/Anaconda/Anaconda%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%87%E6%B3%A8/" title="Anaconda数据集标注">Anaconda数据集标注</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T06:19:56.566Z" title="发表于 2024-02-20 14:19:56">2024-02-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-26T05:01:34.000Z" title="更新于 2023-07-26 13:01:34">2023-07-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Anaconda/">Anaconda</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Tutorial/">Tutorial</a></span></div><div class="content">参考
-
-LabelIng操作
-标注工具Labelimg的安装与使用
-使用anaconda创建Python虚拟环境，并使用国内清华镜像源
-
-打开Anaconda Prompt
-在命令行中输入下列代码，若如下图显示pip版本号则证明anaconda3安装成功。
-1pip --version
-
-创建虚拟环境
-1conda create -n pytorch python=3.7
-激活环境
-1activate pytorch
-
-安装labelimg
-在命令行窗口中依次输入下列代码，安装labelimg依赖的第三方库。
-1234567pip install PyQt5pip install pyqt5-toolspip install lxmlpip install labelimg
-（注：此处可能会因网络原因造成卡顿，请耐心等待，若因为网络问题安装失败则重试）
-安装PyQt5
-
-安装pyqt5-tools
-
-安装lxml
-
-安装labelimg
-
-​       至此，环境配置步骤已经全部完成。在第三方库安装完成后，在命令行中输入labelimg指令以启动labelimg（注：环境配置完成后再 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">TechNotes</div><div class="author-info__description">Stay hungry.Stay foolish.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">31</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/techniquenotes"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/techniquenotes" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2432761900@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/27/Postgresql/%E4%BD%BF%E7%94%A8%20Mybatis%20%E5%90%91%20Postgresql%20%E6%8F%92%E5%85%A5%20UUID%20%E5%AD%97%E6%AE%B5/" title="使用 Mybatis 向 Postgresql 插入 UUID 字段">使用 Mybatis 向 Postgresql 插入 UUID 字段</a><time datetime="2024-03-27T05:54:02.759Z" title="发表于 2024-03-27 13:54:02">2024-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/24/SpringSecurity/Spring%20boot%20+%20Postgresql%20%E5%AE%9E%E7%8E%B0%20JWT%20%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/" title="Spring boot + Postgresql 实现 JWT 身份验证">Spring boot + Postgresql 实现 JWT 身份验证</a><time datetime="2024-03-24T12:44:52.227Z" title="发表于 2024-03-24 20:44:52">2024-03-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/16/Angular/Angular_Chapter1/" title="Angular Chapter1">Angular Chapter1</a><time datetime="2024-03-16T14:36:38.096Z" title="发表于 2024-03-16 22:36:38">2024-03-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/16/Angular/Angular_Chapter2/" title="Angular Chapter2">Angular Chapter2</a><time datetime="2024-03-16T14:36:38.096Z" title="发表于 2024-03-16 22:36:38">2024-03-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/16/Angular/Angular_Chapter3/" title="Angular Chapter3">Angular Chapter3</a><time datetime="2024-03-16T14:36:38.096Z" title="发表于 2024-03-16 22:36:38">2024-03-16</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+数据库样例CIFAR-10简介
+10类标签
+50000个训川练 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">TechNotes</div><div class="author-info__description">Stay hungry.Stay foolish.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/techniquenotes"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/techniquenotes" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2432761900@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/27/SpringSecurity/SpringSecurity%E6%9F%A5%E7%9C%8B%E8%BF%87%E6%BB%A4%E5%99%A8%E9%93%BE/" title="SpringSecurity查看过滤器链">SpringSecurity查看过滤器链</a><time datetime="2024-03-27T06:51:08.965Z" title="发表于 2024-03-27 14:51:08">2024-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/27/Postgresql/%E4%BD%BF%E7%94%A8%20Mybatis%20%E5%90%91%20Postgresql%20%E6%8F%92%E5%85%A5%20UUID%20%E5%AD%97%E6%AE%B5/" title="使用 Mybatis 向 Postgresql 插入 UUID 字段">使用 Mybatis 向 Postgresql 插入 UUID 字段</a><time datetime="2024-03-27T05:54:02.759Z" title="发表于 2024-03-27 13:54:02">2024-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/24/SpringSecurity/Spring%20boot%20+%20Postgresql%20%E5%AE%9E%E7%8E%B0%20JWT%20%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/" title="Spring boot + Postgresql 实现 JWT 身份验证">Spring boot + Postgresql 实现 JWT 身份验证</a><time datetime="2024-03-24T12:44:52.227Z" title="发表于 2024-03-24 20:44:52">2024-03-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/16/Angular/Angular_Chapter1/" title="Angular Chapter1">Angular Chapter1</a><time datetime="2024-03-16T14:36:38.096Z" title="发表于 2024-03-16 22:36:38">2024-03-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/16/Angular/Angular_Chapter2/" title="Angular Chapter2">Angular Chapter2</a><time datetime="2024-03-16T14:36:38.096Z" title="发表于 2024-03-16 22:36:38">2024-03-16</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             <a class="card-more-btn" href="/categories/" title="查看更多">
@@ -402,7 +352,7 @@ LabelIng操作
             </div>
             <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Anaconda/"><span class="card-category-list-name">Anaconda</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Angular/"><span class="card-category-list-name">Angular</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Deep-Learning/"><span class="card-category-list-name">Deep Learning</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Git/"><span class="card-category-list-name">Git</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Hexo/"><span class="card-category-list-name">Hexo</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/IDEA/"><span class="card-category-list-name">IDEA</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Leetcode/"><span class="card-category-list-name">Leetcode</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Postgresql/"><span class="card-category-list-name">Postgresql</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Tutorial/" style="font-size: 1.45em; color: rgb(123, 57, 171)">Tutorial</a><a href="/tags/Note/" style="font-size: 1.35em; color: rgb(155, 92, 132)">Note</a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.15em; color: rgb(157, 58, 190)">数据库</a><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.25em; color: rgb(169, 45, 162)">算法</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><span class="card-archive-list-count">25</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">31</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2023-04-28T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">52.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-03-27T06:04:54.302Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By TechNotes</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://techniquenotes.github.io">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script>function panguFn () {
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Tutorial/" style="font-size: 1.45em; color: rgb(33, 43, 136)">Tutorial</a><a href="/tags/Note/" style="font-size: 1.35em; color: rgb(19, 22, 82)">Note</a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.15em; color: rgb(184, 102, 93)">数据库</a><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.25em; color: rgb(0, 178, 66)">算法</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><span class="card-archive-list-count">25</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">32</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2023-04-28T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">52.6k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-03-27T07:03:49.377Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By TechNotes</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://techniquenotes.github.io">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
